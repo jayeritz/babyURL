@@ -1,0 +1,10 @@
+{
+    "test2": {
+        "username": "test2",
+        "password": "pbkdf2:sha256:150000$EaLrv9Y1$d328818c708aad0228636fc61f6e9e2d84d5c15c75aa5de3cd11ad5670acb386",
+        "id": "274d8011-cefd-400f-9c1d-a629daa18a6a",
+        "url": [
+            "2h19HJkDDmG"
+        ]
+    }
+}
