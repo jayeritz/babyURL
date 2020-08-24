@@ -40,3 +40,8 @@ Haoran He
 Liz Calderon      
 Musharrat Chowdhury   
 Sadika    
+
+## Resources
+[Designing a URL Shortening service like TinyURL](https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR)<br/>
+[如何将一个长URL转换为一个短URL](https://juejin.im/post/6844903853830176776)<br/>
+[短 URL 系统是怎么设计的](https://www.zhihu.com/question/29270034/answer/46446911)<br/>
