@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html>
+<title>babyURL Account Login</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/login.css') }}">
+<body> 
+  
+    <h2>Login</h2>
+    
+
+        <div class="imgcontainer"> 
+            <img src=
+                "https://campaigndonut.com/wp-content/uploads/2019/06/short-url-transparent-icon.png"
+                 alt="Avatar" class="avatar">
+        </div> 
+  
+        <div class="container">
+            {% if message %}
+                <p style="color:red">{{ message }}</p>
+            {% endif %}
+            <form action="" method="POST">
+            <label><b>Username</b></label> 
+            <input type="text" placeholder="Enter Username" name="username" required>
+  
+            <label><b>Password</b></label> 
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <input type="checkbox" name="remember" checked="checked"> Remember me
+            <button type="submit" value="Login">Login</button>
+            </form>
+
+            <form action="/register">
+                <button type="submit" value="Register">Register</button>
+            </form>
+        </div>
+</body> 
+  
+</html> 
