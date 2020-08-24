@@ -1,5 +1,5 @@
 # babyURL   
-TinyURL-like url shortener.   
+TinyURL-like url shortener with qrcode.   
     
 * Implemented base62 encoding and twitter snowflake generate unique ID to avoid hash collisions.      
 * Using AWS dynamoDB as database storing unique ID as key and original URL as value.   
@@ -29,6 +29,8 @@ pip install boto3
 pip install flask
 pip install flask_login   
 pip install redis   
+pip install pyqrcode
+pip install pypng
 ```
 5) Start app from `app.py`    
 
@@ -38,3 +40,8 @@ Haoran He
 Liz Calderon      
 Musharrat Chowdhury   
 Sadika    
+
+## Resources
+[Designing a URL Shortening service like TinyURL](https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR)<br/>
+[如何将一个长URL转换为一个短URL](https://juejin.im/post/6844903853830176776)<br/>
+[短 URL 系统是怎么设计的](https://www.zhihu.com/question/29270034/answer/46446911)<br/>
