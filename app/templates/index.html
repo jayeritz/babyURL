@@ -1,32 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+    
+        <title>BabyUrl/title>
+        <meta charset="utf-8">
+        <title>BabyURL</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel=”stylesheet” type=”text/css” href=”css/index.css” >
+        <script src="index.js"></script>
+        
+    <header>
+   
+        <nav class="mb-1 navbar navbar-expand-lg navbar-light purple darken-1">            
+           <div class="container">
+                <a class="navbar-brand" href="#">BabyURL</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#URL" data-offset="90">URL
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-offset="90">About</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Terms and Conditions" data-offset="90">Terms and conditions</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-offset="90">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='/logout'>Logout</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <div class="md-form my-0">
+                          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        </div>
+                      </form>
+                    </div>
+                
+                    <!-- Social Icon  -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="fab fa-facebook light-green-text-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="fab fa-twitter light-green-text-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="fab fa-instagram light-green-text-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+        <!-- Full Page Intro -->
+        <div id="intro-section" class="view">
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+            <section class="banner embed-responsive-item"></section>
+            <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline
+                autoplay muted loop>
+                <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
+            </video> 
+            
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+                <!-- Content -->
+                <div class="container px-md-3 px-sm-0">
+                    <div class="row wow fadeIn">
+                        <!--Grid column-->
+                        <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                            <h1>Welcome, {{ username }}!</h1>
+                            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Baby URL</h3>
+                            <hr class="hr-light my-4 w-75">
+                            <h4 class="subtext-header mt-2 mb-4"> Shorten URLs with Baby URL.
+                                Free accounts to manage your links. </h4>
+                            <a href="#!" class="btn btn-rounded btn-outline-white">
+                                <i class="fa fa-home"></i> Visit us
+                            </a>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+        </div>
+        <!-- Full Page Intro -->
+    </header>
 
-<h1>Welcome, {{ username }}!</h1>
+    <!--Main layout-->
+    <main>
+        <body> 
+        <section id="URL" class="py-5" style="background-color: rgb(255, 214, 214);">
 
-<p>Thank you for using babyURL. Enter the url that you would like to convert below, then get your babyURL. </p>
-<br>
-<form action="" method="post">
-    <label for="longurl"><b>Your URL:</b></label>
-    <input type="text" placeholder="Enter Your Long URL" name="longurl" id="longurl" required>
-    <button type="submit" value="Submit">Get Your babyURL</button>
+            <!-- Container -->
+            <div class="container">
+            <img src="C:\users\home\desktop\logo2.png"/>
+            <hw class="text-center"></h1>
+           
 
-  </form>
-<br>
-<br>
-{% if shortURL %}
-<p>Here is your babyURL. Hope this was a great experience! Use us again! </p><br>
-<p>http://www.babyURL.com/{{ shortURL }}</p>
-{% endif %}
-<br><br>
+            <p>Thank you for using babyURL. Enter the url that you would like to convert below, then get your babyURL. </p>
+            <br>
+            <form action="" method="post">
+                <label for="longurl"><b>Your URL:</b></label>
+                <input type="text" placeholder="Enter Your Long URL" name="longurl" id="longurl" required>
+                <button type="submit" value="Submit">Get Your babyURL</button>
+            
+              </form>
+            <br> 
+            <br>
+            {% if shortURL %}
+            <p>Here is your babyURL. Hope this was a great experience! Use us again! </p><br>
+            <p>http://www.babyURL.com/{{ shortURL }}</p>
+            <img src="data:image/png;base64, {{qr}}" alt="shortURL qrcode" />
+            {% endif %}
+            <br><br>
+            
+              
+        </section>
+            
+            </body>
 
-<p>At babyURL we love making things better. Have a problem you think technology can fix? Let us know about it. <a href="#"> Contact Us</a> </p>
-  
-<a href='/logout'>Log out</a>
 
-</body>
-</html>
+        <!--Section: about-->
+        <section id="about" class="py-5" style="background-color: rgb(255, 255, 255);">
+
+            <!-- Container -->
+            <div class="container">
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center mb-5">Why is it so great?</h2>
+                <!-- Section description -->
+                <p class="lead grey-text text-center w-responsive mx-auto mb-5">Creating engaging social media posts to share content can drive traffic to any website. However, if you’re including a long, complex link in every post you share, you may be forfeiting clicks, shares, and engagement. Learning the benefits of our URL shortener can help you achieve better content marketing results.
+                     </p>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-5 text-center text-lg-left">
+                        <img class="img-fluid" src="https://follows-bc85.kxcdn.com/blog/wp-content/uploads/2017/11/Link-Shortener-Illustration.jpg" alt="Sample image">
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-7">
+
+                        <!-- Grid row -->
+                        <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">1. Convenience</h5>
+                                <p class="grey-text">It’s much simpler to share a shorter link than a long, complicated one. This especially matters in scenarios where your audience can’t physically click your link or where you’re promoting your website one-to-one. If you’re giving a PowerPoint presentation or sharing a link directly with a prospective customer, a URL shortener can help you create a brief, memorable link that can be typed directly into a smartphone or web browser.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!-- Grid row -->
+                        <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">2. Increased sharing
+                                </h5>
+                                <p class="grey-text">A shortened link is easier for your anyone to click, copy, and share in their own post, which can help your content gain organic exposure on social networks. One can simply fit more links and content in less space with URL shorteners. A tweet can describe and then link to a webpage in under 140 characters, while a full URL might not even come with an explanation.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">3. Stronger engagement </h5>
+                                <p class="grey-text mb-0"> Audiences are more likely to engage with a shortened URL, especially if it’s recognizably associated with your brand. Shortened URLs can increase engagement by 39%, according to Rebrandly..</p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!--Grid row-->
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Container -->
+
+        </section>
+        <!--Section: about-->
+
+        <!--Section: call to action-->
+        <div class="streak streak-md streak-photo" style="background-image:url('https://previews.123rf.com/images/radionastya/radionastya1707/radionastya170700068/82688648-white-marble-texture-with-rose-gold-patina-effect-seamless-pattern-overlay-distress-grain-sequin-ros.jpg')">
+            <div class="flex-center rgba-black-light pattern-1">
+                <div class="white-text smooth-scroll mx-4">
+                    <hw class="text-center"></h2>
+                    <h2 class="h2-responsive mb-5 wow fadeIn">     We'd love to hear from you, whether you have a question about our features, need a demo, assistance, or anything else. Our team is ready to answer all your questions. </h2>
+                    <div class="text-center">
+                        <a href="#contact" class="btn btn-outline-white wow fadeIn " data-offset="100" data-wow-delay="0.2s">Contact
+                            us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+              
+        <!--Section: Terms and Conditions-->
+        <section id="Terms and Conditions" class="text-center py-5" style="background-color: rgb(255, 255, 255);">
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold mb-5">Terms and Conditions</h2>
+                <!-- Section description -->
+                <p class="grey-text w-responsive mx-auto mb-5">BabyURL was created as a free service to make posting long URLs easier, and may only be used for actual URLs. Using it for spamming or illegal purposes is forbidden and any such use will result in the BabyURL being disabled and you may be reported to all ISPs involved and to the proper governmental agencies. This service is provided without warranty of any kind.</p>
+
+
+
+        <!--Section: contact-->
+        <section id="contact" class="py-5" style="background-color: #eee;">
+
+            <div class="container">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact us</h2>
+                <!-- Section description -->
+                <p class="text-center w-responsive mx-auto mb-5">Our team is happy to answer your questions. Fill out the form and we'll be in touch as soon as possible. </p>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-9 mb-md-0 mb-5">
+
+                    <form>
+
+                        <!-- Grid row -->
+                        <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                            <input type="text" id="contact-name" class="form-control">
+                            <label for="contact-name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                            <input type="text" id="contact-email" class="form-control">
+                            <label for="contact-email" class="">Your email</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!-- Grid row -->
+                        <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                            <input type="text" id="contact-Subject" class="form-control">
+                            <label for="contact-Subject" class="">Subject</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!-- Grid row -->
+                        <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <div class="md-form">
+                            <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                            <label for="contact-message">Your message</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </form>
+
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-purple btn-md">Send</a>
+                    </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                        <i class="fa fa-map-marker fa-2x purple-text"></i>
+                        <p>New York, USA</p>
+                        </li>
+                        <li>
+                        <i class="fa fa-phone fa-2x mt-4 purple-text"></i>
+                        <p>+ +1 222 333 4444</p>
+                        </li>
+                        <li>
+                        <i class="fa fa-envelope fa-2x mt-4 purple-text"></i>
+                        <p class="mb-0">babyurl@example.com</p>
+                        </li>
+                    </ul>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+
+        </section>
+        <!--Section: contact-->
+
+    </main>
+    <!--Main layout-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+    
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1">
+                <i class="fab fa-facebook"> </i>
+            </a>
+            </li>
+            <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1">
+                <i class="fab fa-twitter"> </i>
+            </a>
+            </li>
+            <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1">
+                <i class="fab fa-google-plus"> </i>
+            </a>
+            </li>
+            <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1">
+                <i class="fab fa-linkedin"> </i>
+            </a>
+            </li>
+            <li class="list-inline-item">
+            <a class="btn-floating btn-dribbble mx-1">
+                <i class="fab fa-dribbble"> </i>
+            </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+    
+        </div>
+        <!-- Footer Elements -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https:babyurl.tk"> babyurl.com</a>
+        </div>
+        <!-- Copyright -->
+        
+      </footer>
+      <!-- Footer -->
