@@ -40,5 +40,4 @@ pip install python-dotenv
 Jamila  
 Haoran He    
 Liz Calderon      
-Musharrat Chowdhury   
-Sadika    
+Sadika Chowdhury 
